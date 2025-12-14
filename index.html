@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radiant Labels & Packaging | Launching Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #222;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .logo {
+            max-width: 220px;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .dots::after {
+            content: "";
+            animation: dots 1.5s infinite;
+        }
+
+        @keyframes dots {
+            0% { content: ""; }
+            33% { content: "."; }
+            66% { content: ".."; }
+            100% { content: "..."; }
+        }
+
+        .divider {
+            width: 70px;
+            height: 3px;
+            background-color: #e30613;
+            margin: 20px auto;
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .logo {
+                max-width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="Radiant Labels & Packaging" class="logo">
+
+        <h1>LAUNCHING SOON<span class="dots"></span></h1>
+        <div class="divider"></div>
+        <p>
+            We are building premium label and packaging solutions with precision,
+            quality, and innovation. Stay tuned.
+        </p>
+    </div>
+
+    <footer>
+        © 2025 Radiant Labels & Packaging. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
